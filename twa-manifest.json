@@ -1,0 +1,36 @@
+{
+  "packageName": "com.mstools.dev",
+  "host": "tools.msdevx.com",
+  "launcherName": "MS DevX Tools",
+  "display": "standalone",
+  "themeColor": "#1e40af",
+  "navigationColor": "#1e40af",
+  "backgroundColor": "#ffffff",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://tools.msdevx.com/icons/android-chrome-512x512.png",
+  "maskableIconUrl": "https://tools.msdevx.com/web-app-manifest-512x512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": null,
+    "alias": null
+  },
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://tools.msdevx.com/manifest.json",
+  "fallbackType": "customtabs",
+  "features": {
+    "locationDelegation": "gms"
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "fullScopeUrl": "https://tools.msdevx.com",
+  "scopeUrl": "https://tools.msdevx.com",
+  "orientationBehavior": "default"
+}
