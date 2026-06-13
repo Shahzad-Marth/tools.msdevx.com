@@ -2,3 +2,10 @@ node_modules/
 .next/
 .env
 *.log
+
+# Project config files (not used in application code)
+AGENTS.md
+ASSETLINKS_SETUP.md
+DEVELOPMENT.md
+opencode.json
+STYLE_TOKENS.md
