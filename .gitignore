@@ -3,6 +3,9 @@ node_modules/
 .env
 *.log
 
+# Play Store listing assets (not used on website)
+playstore/
+
 # Project config files (not used in application code)
 AGENTS.md
 ASSETLINKS_SETUP.md

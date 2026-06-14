@@ -78,8 +78,7 @@ npm start
 │   └── data/
 │       ├── registry/    # Tool/blog/category registries
 │       └── blogContent/ # Blog post content
-├── scripts/             # Build/generation scripts
-└── playstore/           # Play Store listing assets
+└── scripts/             # Build/generation scripts
 ```
 
 ---
