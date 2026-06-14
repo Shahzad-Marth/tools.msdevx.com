@@ -57,7 +57,7 @@ const tools = baseTools.map((tool) => {
     popular: POPULAR_SLUGS.includes(tool.slug),
     publishDate: NEWER_TOOL_SLUGS.includes(tool.slug) ? "2026-05-25" : "2026-01-15",
     lastUpdated: "2026-05-25",
-    ogImage: `/og/tools/${tool.slug}.webp`,
+    ogImage: siteConfig.ogImage,
     readingTime: "3 min read",
     tags: tool.keywords.slice(0, 5),
     shortDescription: tool.description,

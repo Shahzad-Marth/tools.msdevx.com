@@ -46,13 +46,13 @@ export async function generateMetadata({ params }) {
         description: `Browse our ${catName.toLowerCase()} articles, guides, and tutorials.`,
         url: `${siteConfig.baseUrl}/blog/${slug}`,
         type: "website",
-        images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: `${catName} Articles & Guides | MS DevX Tools` }],
+        images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: `${catName} Articles & Guides | MS DevX Tools` }],
       },
       twitter: {
         card: "summary_large_image",
         title: `${catName} Articles & Guides | MS DevX Tools`,
         description: `Browse our ${catName.toLowerCase()} articles, guides, and tutorials.`,
-        images: ["/assets/OG/OG.webp"],
+        images: [siteConfig.ogImage],
       },
       alternates: { canonical: `${siteConfig.baseUrl}/blog/${slug}` },
     };
@@ -139,8 +139,9 @@ function BlogPostPage({ post }) {
         },
         image: {
           "@type": "ImageObject",
-          url: `${siteConfig.baseUrl}/assets/OG/OG.webp`,
-          width: 1664, height: 928,
+          url: `${siteConfig.baseUrl}${siteConfig.ogImage}`,
+          width: siteConfig.ogImageWidth,
+          height: siteConfig.ogImageHeight,
         },
         mainEntityOfPage: {
           "@type": "WebPage",

@@ -63,10 +63,10 @@ export const metadata = {
     url: siteConfig.baseUrl,
     images: [
       {
-        url: "/assets/OG/OG.webp",
-        width: 1200,
-        height: 630,
-        alt: "MS DevX Tools - Free Online Tools",
+        url: siteConfig.ogImage,
+        width: siteConfig.ogImageWidth,
+        height: siteConfig.ogImageHeight,
+        alt: "MS DevX Tools — Professional Web Tools for Everyday Work. Calculators, converters, generators and utilities for focused work.",
       },
     ],
   },
@@ -75,7 +75,7 @@ export const metadata = {
     title: "Free Online Tools for Everyday Work | MS DevX Tools",
     description:
       "Use free browser-based calculators, converters, generators, text tools, finance tools, health tools, and productivity utilities from MS DevX Tools.",
-    images: ["/assets/OG/OG.webp"],
+    images: [siteConfig.ogImage],
   },
   verification: {
     google: "tjh5k_hvx4gT0WTLaV3btfgvgZ_P-2EU3CKU8iKlUh4",

@@ -15,14 +15,14 @@ export function generateMetadata() {
         "Cookie Policy for tools.msdevx.com - learn about the cookies we use and how to manage them.",
       url: `${siteConfig.baseUrl}/cookies`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Cookie Policy" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Cookie Policy" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Cookie Policy | MS DevX Tools",
       description:
         "Cookie Policy for tools.msdevx.com - learn about the cookies we use and how to manage them.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/cookies` },
   };

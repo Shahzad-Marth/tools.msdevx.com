@@ -16,14 +16,14 @@ export function generateMetadata() {
         "Learn about MS DevX Tools and our mission to provide fast, free, and easy-to-use online tools for everyone.",
       url: `${siteConfig.baseUrl}/about`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Free Online Tools" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Free Online Tools" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "About Us | MS DevX Tools",
       description:
         "Learn about MS DevX Tools and our mission to provide fast, free, and easy-to-use online tools for everyone.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/about` },
   };

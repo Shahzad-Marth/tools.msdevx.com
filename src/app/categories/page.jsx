@@ -15,13 +15,13 @@ export function generateMetadata() {
       description: "Browse all tool categories — Date & Time, Finance, Health, Text, Security, Utilities, Academic, and more.",
       url: `${siteConfig.baseUrl}/categories`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Free Online Tools" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Free Online Tools" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Categories",
       description: "Browse all tool categories — Date & Time, Finance, Health, Text, Security, Utilities, Academic, and more.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/categories` },
   };

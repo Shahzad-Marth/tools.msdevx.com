@@ -17,13 +17,13 @@ export function generateMetadata() {
       description: "Read our latest articles on calculators, tools, and productivity tips from MS DevX Tools.",
       url: `${siteConfig.baseUrl}/blog`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools Blog" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools Blog" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Blog",
       description: "Read our latest articles on calculators, tools, and productivity tips from MS DevX Tools.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/blog` },
   };

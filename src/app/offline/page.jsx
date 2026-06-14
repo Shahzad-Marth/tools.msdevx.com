@@ -10,13 +10,13 @@ export function generateMetadata() {
       description: "Please check your internet connection and try again. Previously visited pages may still be available.",
       url: `${siteConfig.baseUrl}/offline`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Free Online Tools" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Free Online Tools" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "You're Offline | MS DevX Tools",
       description: "Please check your internet connection and try again.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/offline` },
   };

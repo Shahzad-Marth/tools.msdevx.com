@@ -21,7 +21,7 @@ export const siteConfig = {
   title: "Free Online Tools for Everyday Work | MS DevX Tools",
   description:
     "Use free browser-based calculators, converters, generators, text tools, finance tools, health tools, and productivity utilities from MS DevX Tools.",
-  ogImage: "/assets/OG/OG.webp",
+  ogImage: "/og/tools_msdevx_com-og-universal-1200x630.jpg",
   ogImageWidth: 1200,
   ogImageHeight: 630,
   googleAnalyticsId: "G-F6RQ7H08D6",

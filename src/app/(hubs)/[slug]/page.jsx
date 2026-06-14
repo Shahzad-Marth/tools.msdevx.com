@@ -25,13 +25,13 @@ export async function generateMetadata({ params }) {
       description: cat.seo.description,
       url: `${siteConfig.baseUrl}/${slug}`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: `${cat.title} Tools & Calculators | MS DevX Tools` }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: `${cat.title} Tools & Calculators | MS DevX Tools` }],
     },
     twitter: {
       card: "summary_large_image",
       title: cat.seo.title.replace(/\s*\|.*$/, ""),
       description: cat.seo.description,
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/${slug}` },
   };

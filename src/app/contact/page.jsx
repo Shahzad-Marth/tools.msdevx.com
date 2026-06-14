@@ -12,13 +12,13 @@ export function generateMetadata() {
       description: "Get in touch with MS DevX Tools. Send us a message, suggest a tool, report a bug, or ask a question.",
       url: `${siteConfig.baseUrl}/contact`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Free Online Tools" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Free Online Tools" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Contact Us | MS DevX Tools",
       description: "Get in touch with MS DevX Tools. Send us a message, suggest a tool, report a bug, or ask a question.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/contact` },
   };

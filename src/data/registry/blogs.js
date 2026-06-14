@@ -38,7 +38,7 @@ export function computeRelatedBlogs(slug, allBlogs, count = 3) {
 }
 
 const blogs = baseBlogPosts.map((post) => {
-  const ogImage = `/og/blogs/${post.slug}.webp`;
+  const ogImage = siteConfig.ogImage;
   return {
     ...post,
     toolSlugs: post.toolSlugs || [post.slug],

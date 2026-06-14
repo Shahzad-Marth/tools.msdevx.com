@@ -15,14 +15,14 @@ export function generateMetadata() {
         "Privacy Policy for tools.msdevx.com - learn how we protect your data and respect your privacy.",
       url: `${siteConfig.baseUrl}/privacy`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Privacy Policy" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Privacy Policy" }],
     },
     twitter: {
       card: "summary_large_image",
       title: "Privacy Policy | MS DevX Tools",
       description:
         "Privacy Policy for tools.msdevx.com - learn how we protect your data and respect your privacy.",
-      images: ["/assets/OG/OG.webp"],
+      images: [siteConfig.ogImage],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/privacy` },
   };

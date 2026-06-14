@@ -11,7 +11,7 @@ export function generateMetadata() {
       description: "The page you're looking for doesn't exist or has been moved.",
       url: `${siteConfig.baseUrl}/404`,
       type: "website",
-      images: [{ url: "/assets/OG/OG.webp", width: 1664, height: 928, alt: "MS DevX Tools - Free Online Tools" }],
+      images: [{ url: siteConfig.ogImage, width: siteConfig.ogImageWidth, height: siteConfig.ogImageHeight, alt: "MS DevX Tools - Free Online Tools" }],
     },
     alternates: { canonical: `${siteConfig.baseUrl}/404` },
   };
